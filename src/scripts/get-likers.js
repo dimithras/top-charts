@@ -1,5 +1,5 @@
 
-const publication_id = 604957;
+const publication_id = document.getElementsByClassName("l-entry")[0].getAttribute('data-content-id')
 fetch(`https://vc.ru/vote/get_likers?id=${publication_id}&type=1&mode=raw`)
     .then((response) => response.json())
     .then((data) => {
